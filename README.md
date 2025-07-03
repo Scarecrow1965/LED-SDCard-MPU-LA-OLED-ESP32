@@ -16,5 +16,5 @@ I am using PlatformIO in VSCode for various reasons (library download/upgrades, 
 
 ## Diagram
 Below is the wiring diagram currently used to attach all to my workstation:
-<img height=500 width=1000 alt="Wiring diagram" src="https://github.com/Scarecrow1965/LED-SDCard-MPU-LA-OLED-ESP32/ESP32-deskstand-wiring2.png">
+<img height=500 width=1000 alt="Wiring diagram" src="https://github.com/Scarecrow1965/LED-SDCard-MPU-LA-OLED-ESP32/blob/main/ESP32-deskstand-wiring2.png">
 You can download it to review it.
