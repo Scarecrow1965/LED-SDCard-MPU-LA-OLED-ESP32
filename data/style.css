@@ -1,0 +1,198 @@
+/* All from https: //randomnerdtutorials.com/esp32-mpu-6050-web-server/ */
+
+/*
+  Rui Santos
+  Complete project details at https://RandomNerdTutorials.com/esp32-mpu-6050-web-server/
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files.
+  The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+*/
+
+html {
+    
+    display: inline-block;
+    text-align: center;
+    background: none;
+    background-color: white;
+    max-width: max-content;
+    /* max-width: 100%; */
+}
+
+p {
+    font-family:  system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2rem;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+}
+
+h3 {
+    font-family: Arial;
+    font-size: 2.0rem;
+    font-variant-caps: all-small-caps;
+}
+
+body {
+    /* background: none; */
+    /* background-color: white; */
+    /* max-width: 100%; */
+    margin: 0;
+    padding: 0;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #003366;
+    color: #FFD43B;
+    font-size: 1rem;
+}
+
+.content {
+    text-align: center;
+    font-family: Arial;
+    max-width: max-content;
+    padding: 20px;
+    /* used for testing purposes only   */
+    /* border: 2px dashed blue; */
+    /*  */
+}
+
+.cards {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* used for testing purposes only */
+    /* border: 2px dashed yellow; */
+    /*  */
+}
+
+.card {
+    background-color: white;
+    box-shadow: 2px 2px 12px 1px rgba(140, 140, 140, .5);
+    /*  used for testing purposes only */
+    /* border: 2px dashed red; */
+    /*  */
+}
+
+.card-title {
+    color: #003366;
+    font-weight: bold;
+}
+
+.reading {
+    font-size: 1.2rem;
+}
+
+.cube-content {
+    width: 100%;
+    background-color: white;
+    height: 300px;
+    margin: auto;
+    padding-top: 2%;
+}
+
+#reset {
+    border: none;
+    color: #FEFCFB;
+    background-color: #003366;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    width: 150px;
+    border-radius: 4px;
+}
+
+#resetX,
+#resetY,
+#resetZ {
+    border: none;
+    color: #FEFCFB;
+    background-color: #003366;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    width: 20px;
+    border-radius: 4px;
+}
+
+/* TESTING PORTION ONLY */
+/* DIGITAL DISPLAY */
+/* from: https://bytethisstore.com/articles/pg/js-digital-numbers */
+.content2 {
+    padding: 10px;
+    background: none;
+    /* background-color: black; */
+    color: black;
+    /* used for testing purposes only   */
+    /* border: 2px solid blue; */
+    /*  */
+}
+
+.digital-body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.4em;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.digital-header {
+    border-bottom: 1px solid black;
+    padding: 10px;
+    background-color: #009a7a;
+}
+
+.digital-section {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    color: black;
+}
+
+.card2 {
+    background-color: black;
+    /* used for testing purposes only */
+    /* border: 2px dashed red; */
+    /*  */
+}
+
+/* Digital Digit / Number Styles */
+digital-digit {
+    display: inline-block;
+    height: 130px;
+    width: 65px;
+    margin: 10px;
+    /* used for testing purposes only */
+    /* border: 2px dashed blue; */
+    /*  */
+}
+
+digital-number {
+    display: inline-block;
+    margin: 10px;
+    height: auto;
+    /* used for testing purposes only */
+    /* border: 2px dashed green; */
+    /*  */
+}
+
+/** These classes will control individual digit part visibility */
+.digital-digit-inactive {
+    background-color: rgb(51, 51, 51);
+}
+.digital-digit-active {
+    background-color: white;
+    /* original code */
+    /* background-color: #3300FF; */
+    /* add slight boldness to active elements */
+    border: 2px sold white;
+    /* original code */
+    /* border: 1px solid #3300FF; */
+}
+
