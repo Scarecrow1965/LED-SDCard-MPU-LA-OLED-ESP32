@@ -47,6 +47,7 @@ This program inside this repository includes the following modules:
 
 One last piece of the puzzle has yet to be installed: the RT-11 or more commonly named JCHT35K9... now there's a major problem to be had!!
  
+As a very new/junior programmer, this is getting out of hand real quick/over my head.
 I am using PlatformIO in VSCode for various reasons (library download/upgrades, series output, uploading to ESP32).
 
 ## Diagram:
@@ -55,7 +56,20 @@ Below is the wiring diagram currently used to attach all to my workstation:
 You can download it to get more precise information.
 
 ##Problems:
-#1 - Since this house is well built; the gyro is always having issues stabilizing. This sometime leads the ESP to reset and/or simply enable one of the linear actuators.
-#2 - Had to find a way to create a way to ensure the standup table would work through the serial monitor; think I have it down pat but not sure.
-#3 - Trying to get this RT-11 to work is like trying to pull my own teeth; very painful and very non-productive. 
-  There are only a few websites that detail some work done, but the code in them simply does not work for my setup.
+Problems that I have encountered and maybe fixed:
+'#1- Why does this Arduino keep reseting if I engage the Linear actuators up or even down? Ugh, the bi-directional doides... That took a long time to figure it out...
+'#2- What will my LEDs do? oh boy... The sky's the limit on this one... Let's see if I can maybe create a dozen of so ways for it to do things... No more problems I hope...
+'#3- Uh oh... out of memory? 4K is simply not enough for what I need it to do and I'm no where close to being done... Time for an ESP32!!
+'#4- Why are my linear actuators not moving at the same speed? ugh, now what? How the hell am I going to get this fixed? Guess it's a gyro? Does it come in a micro size?
+'#5- How am I going to see what the hell is going on... SSD1306 to the rescue... Ooops incoming Rabit hole!!!
+'#5- Since this house is well built, the gyro is always having issues stabilizing. This sometime leads the ESP to reset and/or simply enable one of the linear actuators and then reset in the process.
+'#6- Uh oh.. out of memory again? Got way too much code and need to modularize things. Saving it to files? Need an external memory to do that...
+'#7- how can I find out how everything works if the tiny little SSD1306 can't show it all to me. Ah, what about logging the information?
+'#8- maybe I can kill two birds with one stone? An SD Card module... Now I can call the animation on the screen, and save the datalogs...
+'#9- Had to find a way to create a way to ensure the standup table would work through the serial monitor; think I have it down pat but not sure but what about the remote control (RT-11).
+'#10- Alright, the random LEDs program is supposed to be active if the table is not moving... think it's working? only sometimes though.
+'#11- The LEDs should display the level of the table while it is moving.... hmmm. that doesn't seem to work.
+'#12 - 
+'#??- Trying to get this RT-11 to work is like trying to pull my own teeth; very painful and very non-productive. 
+ There are only a few websites that detail some work done, but the code in them simply does not work for my setup.
+ Found out that I have power to it, but that's it... no LEDs on in the RT-11 and the up and down switches don't work....
