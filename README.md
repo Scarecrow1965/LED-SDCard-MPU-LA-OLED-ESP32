@@ -1,18 +1,18 @@
 ## My Personal Computer Workstation
 
-I decided to build my very own custom U-shaped computer workstation so i can learn how to code and even do some computewr building as a side hobby/job.
-It would have an epoxied hardwood butcher style top with a notch at the bottom for LED strips and the rest would be parts of an old computer server mainframe I got a while ago.
+I decided to build my very own custom U-shaped computer workstation so i can learn how to code and even do some computewr building as a side hobby/job.<br>
+It would have an epoxied hardwood butcher style top with a notch at the bottom for LED strips and the rest would be parts of an old computer server mainframe I got a while ago.<br>
 
-It would have three distinct parts to it.
-The first section would be a wide stand big enoung to house a computer repair platform and would have an open-frame chassis with power supply sitting on top of an ESD mat located right beside me.
-The second section would be a stand-up desk that would house all the standard things: 3 monitors, mouse, keyboard, sound bar, stream deck, lighting, microphone, etc. It would also have a control to raise and lower the top.
-The third section would be a small stand which would have the other peripherals like printer, scanner, external hard drives, reference books, etc.
+It would have three distinct parts to it.<br>
+The first section would be a wide stand big enoung to house a computer repair platform and would have an open-frame chassis with power supply sitting on top of an ESD mat located right beside me.<br>
+The second section would be a stand-up desk that would house all the standard things: 3 monitors, mouse, keyboard, sound bar, stream deck, lighting, microphone, etc. It would also have a control to raise and lower the top.<br>
+The third section would be a small stand which would have the other peripherals like printer, scanner, external hard drives, reference books, etc.<br>
 
-On each of the sections (at the bottom of the hardwood), there would be an addressable WS2818A LED strip which would surround the entire section.
-Of course, since these section have different sizes, so would be the number of LEDs.
+On each of the sections (at the bottom of the hardwood), there would be an addressable WS2818A LED strip which would surround the entire section.<br>
+Of course, since these section have different sizes, so would be the number of LEDs.<br>
 
 ## Contents:
-This is almost the full series of upgrades to my computer wokstation.
+This is almost the full series of upgrades to my computer wokstation.<br>
 This program inside this repository includes the following modules:
 - 1x DOIT V1 Devkit ESP32 (<a href="https://randomnerdtutorials.com/getting-started-with-esp32/" target="_blank">link here</a>);
 - 1x 4-relay module (example of it : <a href="https://www.amazon.ca/ELEGOO-Channel-Optocoupler-Arduino-Raspberry/dp/B06XCKQ1M9?th=1" target="_blank">link here</a>);
@@ -24,13 +24,13 @@ This program inside this repository includes the following modules:
 - 2x Linear Actuators (<a href="https://www.windynation.com/products/linear-actuators" target="_blank">link here</a>); and
 - 2x Bi-directional Diodes (TVS) (<a href="https://www.rohm.com/electronics-basics/diodes/di_what8" target="_blank">link here</a>).
 
-One last piece of the puzzle yet to be installed is the RT-11 (<a href="https://www.progressiveautomations.ca/products/rt-11" target="_blank">link here</a>) or more commonly named JCHT35K9... now there's a major problem to be had!!
+One last piece of the puzzle yet to be installed is the RT-11 (<a href="https://www.progressiveautomations.ca/products/rt-11" target="_blank">link here</a>) or more commonly named JCHT35K9... now there's a major problem to be had!!<br>
 
 ## History
-Since I wanted to build this custom workstation, I had originally thought that the stand-up table section would be powered by 2 linear actuators and an Arduino board and the three addressable LED strips which would surround each section.
-I soon discovered that I needed a 4-relay module. So a little more code had to be added... and learning.
-Then I found out that, if I reversed polarity, it would reset the arduino since the power fluctuations would too much for it.
-So I had to get bi-directional diodes to compensate for this. (That took a long time to figure that out.)
+Since I wanted to build this custom workstation, I had originally thought that the stand-up table section would be powered by 2 linear actuators and an Arduino board and the three addressable LED strips which would surround each section.<br>
+I soon discovered that I needed a 4-relay module. So a little more code had to be added... and learning.<br>
+Then I found out that, if I reversed polarity, it would reset the arduino since the power fluctuations would too much for it.<br>
+So I had to get bi-directional diodes to compensate for this. (That took a long time to figure that out.)<br>
 Looking for something that my addrerssable LEDs would do led me down a huge rabbit hole.. way more code... and a way more testing...
 I soon found out that the Arduino Uno would not be able to deal with all of this code; out of memory and things didn't seem right, and was running out of pins to work with.
 Hence the DOIT V1 devkit ESP32... and a huge learning curve... and change of code.
@@ -62,11 +62,11 @@ Below is the wiring diagram currently used to attach all to my workstation:
 You can download it to get more precise information.
 
 ## Problems:
-Problems that I have encountered and fixed(??):
+Problems that I have encountered and fixed(??):<br>
 
-1- Hmm. With only the basic parts, I can only energize the linear actuator one way. Guess I need a 4-relay module to switch polarities on the linear Actuators. (one problem down)
-2- Why does this Arduino keep reseting if I engage the Linear actuators up or even down? Ugh, the bi-directional doides... That took a long time to figure it out... (one more problem down)
-3- What will my LEDs do? oh boy... The sky's the limit on this one... Let's see if I can maybe create a dozen of so ways for it to do things... No more problems I hope...
+1- Hmm. With only the basic parts, I can only energize the linear actuator one way. Guess I need a 4-relay module to switch polarities on the linear Actuators. (one problem down)<br>
+2- Why does this Arduino keep reseting if I engage the Linear actuators up or even down? Ugh, the bi-directional doides... That took a long time to figure it out... (one more problem down)<br>
+3- What will my LEDs do? oh boy... The sky's the limit on this one... Let's see if I can maybe create a dozen of so ways for it to do things... No more problems I hope...<br>
 4- Uh oh... out of memory? 4K is simply not enough for what I need it to do and I'm no where close to being done... Which arduino can I use. So I tried the Arduino Mega...  Geez, still not enough memory. Time for an ESP32 and dev board!!
 5- Why are my linear actuators not moving at the same speed? ugh, now what? How the hell am I going to get this fixed? Guess I need some sort of gyro system. Does it come in a micro size? Yep, sure does, welcome the MPU-6050! (problem solved)
 6- still running into issues that I can't see through serial monitor...
