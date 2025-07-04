@@ -20,9 +20,9 @@ This program inside this repository includes the following modules:
 - 1x Micro SDCard module with 8Gb SD Card (<a href="https://www.amazon.ca/Storage-Memory-Shield-Module-Arduino/dp/B01IPCAP72" target="_blank">link here</a>);
 - 1x OLED SSD1306 (example of it: <a href="https://www.amazon.ca/UCTRONICS-SSD1306-Self-Luminous-Display-Raspberry/dp/B072Q2X2LL" target="_blank">link here</a>);
 - 1x MPU-6050 gyro and accelerometer module (<a href="https://howtomechatronics.com/tutorials/arduino/arduino-and-mpu6050-accelerometer-and-gyroscope-tutorial/" target="_blank">link here</a>);
-- 3x WS2818B LED RGB Addressable strips (<a href="https://www.superlightingled.com/ws2818-ic-programmable-led-strips-c-5_488_183.html" target="_blank">link here</a>); and
-- 2x Linear Actuators (<a href="https://www.windynation.com/products/linear-actuators" target="_blank">link here</a>).
-- 2x Bi-directional Diodes (TVS) (<a href="https://www.rohm.com/electronics-basics/diodes/di_what8" target="_blank">link here</a>)
+- 3x WS2818B LED RGB Addressable strips (<a href="https://www.superlightingled.com/ws2818-ic-programmable-led-strips-c-5_488_183.html" target="_blank">link here</a>);
+- 2x Linear Actuators (<a href="https://www.windynation.com/products/linear-actuators" target="_blank">link here</a>); and
+- 2x Bi-directional Diodes (TVS) (<a href="https://www.rohm.com/electronics-basics/diodes/di_what8" target="_blank">link here</a>).
 
 One last piece of the puzzle yet to be installed is the RT-11 (<a href="https://www.progressiveautomations.ca/products/rt-11" target="_blank">link here</a>) or more commonly named JCHT35K9... now there's a major problem to be had!!
 
