@@ -63,26 +63,26 @@ You can download it to get more precise information.
 
 ## Problems:
 Problems that I have encountered and fixed(??):
-#1- Hmm. With only the basic parts, I can only energize the linear actuator one way. Guess I need a 4-relay module to switch polarities on the linear Actuators. (one problem down)
-#2- Why does this Arduino keep reseting if I engage the Linear actuators up or even down? Ugh, the bi-directional doides... That took a long time to figure it out... (one more problem down)
-#3- What will my LEDs do? oh boy... The sky's the limit on this one... Let's see if I can maybe create a dozen of so ways for it to do things... No more problems I hope...
-#4- Uh oh... out of memory? 4K is simply not enough for what I need it to do and I'm no where close to being done... Which arduino can I use. So I tried the Arduino Mega...  Geez, still not enough memory. Time for an ESP32 and dev board!!
-#5- Why are my linear actuators not moving at the same speed? ugh, now what? How the hell am I going to get this fixed? Guess I need some sort of gyro system. Does it come in a micro size? Yep, sure does, welcome the MPU-6050! (problem solved)
-#6- still running into issues that I can't see through serial monitor...
-#7- How am I going to see what the hell is going on in real time... SSD1306 to the rescue... Ooops incoming Rabit hole!!! (Problem solved)
-#8- Since this house is well built, the gyro is always having issues stabilizing...
+
+1- Hmm. With only the basic parts, I can only energize the linear actuator one way. Guess I need a 4-relay module to switch polarities on the linear Actuators. (one problem down)
+2- Why does this Arduino keep reseting if I engage the Linear actuators up or even down? Ugh, the bi-directional doides... That took a long time to figure it out... (one more problem down)
+3- What will my LEDs do? oh boy... The sky's the limit on this one... Let's see if I can maybe create a dozen of so ways for it to do things... No more problems I hope...
+4- Uh oh... out of memory? 4K is simply not enough for what I need it to do and I'm no where close to being done... Which arduino can I use. So I tried the Arduino Mega...  Geez, still not enough memory. Time for an ESP32 and dev board!!
+5- Why are my linear actuators not moving at the same speed? ugh, now what? How the hell am I going to get this fixed? Guess I need some sort of gyro system. Does it come in a micro size? Yep, sure does, welcome the MPU-6050! (problem solved)
+6- still running into issues that I can't see through serial monitor...
+7- How am I going to see what the hell is going on in real time... SSD1306 to the rescue... Ooops incoming Rabit hole!!! (Problem solved)
+8- Since this house is well built, the gyro is always having issues stabilizing...
   How am I going to see what is going on without my doing calestenics (bending over an looking underneath my workstation to look at the SSD1306 while looking at the serial monitor's outputs)?
   This sometime leads the ESP to reset and/or simply enable one of the linear actuators and then reset in the process. (still a problem)
-#9- Uh oh.. out of memory again? Got way too much code and need to modularize things. Saving it to files? Need an external memory storage (aka external harddrive?) to do that...
-#10- how can I find out how everything works if the tiny little SSD1306 can't show it all to me. Ah, what about logging the information?
-#11- maybe I can kill two birds with one stone? An SD Card module? Do they make them that small, you bet!... Now I can call the animation on the screen, and save the datalogs...
-#12- Had to find a way to create a way to ensure the standup table would work through the serial monitor; think I have it down pat but not sure but what about the remote control (RT-11). (still a problem, a timing issue?)
-#13- Alright, the random LEDs program is supposed to be active if the table is not moving... think it's working? only sometimes though. (still a problem)
-#14- The LEDs should display the level of the table while it is moving.... hmmm. that doesn't seem to work. (still a problem)
-#15 - 
-#??- Trying to get this RT-11 to work is like trying to pull my own teeth; very painful and very non-productive. 
+9- Uh oh.. out of memory again? Got way too much code and need to modularize things. Saving it to files? Need an external memory storage (aka external harddrive?) to do that...
+10- how can I find out how everything works if the tiny little SSD1306 can't show it all to me. Ah, what about logging the information?
+11- maybe I can kill two birds with one stone? An SD Card module? Do they make them that small, you bet!... Now I can call the animation on the screen, and save the datalogs...
+12- Had to find a way to create a way to ensure the standup table would work through the serial monitor; think I have it down pat but not sure but what about the remote control (RT-11). (still a problem, a timing issue?)
+13- Alright, the random LEDs program is supposed to be active if the table is not moving... think it's working? only sometimes though. (still a problem)
+14- The LEDs should display the level of the table while it is moving.... hmmm. that doesn't seem to work. (still a problem)
+15- 
+??- Trying to get this RT-11 to work is like trying to pull my own teeth; very painful and very non-productive. 
  There are only a few websites that detail some work done, but the code in them simply does not work for my setup.
- 
  Refs:
  1) <a href="https://embedded-elixir.com/post/2019-01-18-nerves-at-home-desk-controller/" target="_blank">https://embedded-elixir.com/post/2019-01-18-nerves-at-home-desk-controller/</a>; and
  2) <a href="https://hackaday.io/project/4173-uplift-desk-wifi-link/log/13628-remote-connector" target="_blank">https://hackaday.io/project/4173-uplift-desk-wifi-link/log/13628-remote-connector</a>;
