@@ -14,17 +14,17 @@ Of course, since these section have different sizes, so would be the number of L
 ## Contents:
 This is almost the full series of upgrades to my computer wokstation.
 This program inside this repository includes the following modules:
-- 1x DOIT V1 Devkit ESP32 (https://randomnerdtutorials.com/getting-started-with-esp32/);
-- 1x 4-relay module (example of it : https://www.amazon.ca/ELEGOO-Channel-Optocoupler-Arduino-Raspberry/dp/B06XCKQ1M9?th=1);
-- 1x Ultrasonic distance module (https://www.hackster.io/csw1/ultrasonic-sensor-with-arduino-uno-f33ca1);
-- 1x Micro SDCard module with 8Gb SD Card (https://www.amazon.ca/Storage-Memory-Shield-Module-Arduino/dp/B01IPCAP72);
-- 1x OLED SSD1306 (example of it: https://www.amazon.ca/UCTRONICS-SSD1306-Self-Luminous-Display-Raspberry/dp/B072Q2X2LL);
-- 1x MPU-6050 gyro and accelerometer module (https://howtomechatronics.com/tutorials/arduino/arduino-and-mpu6050-accelerometer-and-gyroscope-tutorial/);
-- 3x WS2818B LED RGB Addressable strips (https://www.superlightingled.com/ws2818-ic-programmable-led-strips-c-5_488_183.html); and
-- 2x Linear Actuators (https://www.windynation.com/products/linear-actuators).
-- 2x Bi-directional Diodes (TVS) (https://www.rohm.com/electronics-basics/diodes/di_what8)
+- 1x DOIT V1 Devkit ESP32 (<a href="https://randomnerdtutorials.com/getting-started-with-esp32/" target="_blank"><link here</a>);
+- 1x 4-relay module (example of it : <a href="https://www.amazon.ca/ELEGOO-Channel-Optocoupler-Arduino-Raspberry/dp/B06XCKQ1M9?th=1" target="_blank">link here</a>);
+- 1x Ultrasonic distance module (<a href="https://www.hackster.io/csw1/ultrasonic-sensor-with-arduino-uno-f33ca1" target="_blank">link here</a>);
+- 1x Micro SDCard module with 8Gb SD Card (<a href="https://www.amazon.ca/Storage-Memory-Shield-Module-Arduino/dp/B01IPCAP72" target="_blank"><link here</a>);
+- 1x OLED SSD1306 (example of it: <a href="https://www.amazon.ca/UCTRONICS-SSD1306-Self-Luminous-Display-Raspberry/dp/B072Q2X2LL" target="_blank"><link here</a>);
+- 1x MPU-6050 gyro and accelerometer module (<a href="https://howtomechatronics.com/tutorials/arduino/arduino-and-mpu6050-accelerometer-and-gyroscope-tutorial/" target="_blank"><link here</a>);
+- 3x WS2818B LED RGB Addressable strips (<a href="https://www.superlightingled.com/ws2818-ic-programmable-led-strips-c-5_488_183.html" target="_blank"><link here</a>); and
+- 2x Linear Actuators (<a href="https://www.windynation.com/products/linear-actuators" target="_blank"><link here</a>).
+- 2x Bi-directional Diodes (TVS) (<a href="https://www.rohm.com/electronics-basics/diodes/di_what8" target="_blank"><link here</a>)
 
-One last piece of the puzzle yet to be installed is the RT-11 (https://www.progressiveautomations.ca/products/rt-11) or more commonly named JCHT35K9... now there's a major problem to be had!!
+One last piece of the puzzle yet to be installed is the RT-11 (<a href="https://www.progressiveautomations.ca/products/rt-11" target="_blank"><link here</a>) or more commonly named JCHT35K9... now there's a major problem to be had!!
 
 ## History
 Since I wanted to build this custom workstation, I had originally thought that the stand-up table section would be powered by 2 linear actuators and an Arduino board and the three addressable LED strips which would surround each section.
@@ -81,5 +81,8 @@ Problems that I have encountered and fixed(??):
  #14- The LEDs should display the level of the table while it is moving.... hmmm. that doesn't seem to work. (still a problem)
  #15 - 
  #??- Trying to get this RT-11 to work is like trying to pull my own teeth; very painful and very non-productive. 
- There are only a few websites that detail some work done, but the code in them simply does not work for my setup. Refs: 1) https://embedded-elixir.com/post/2019-01-18-nerves-at-home-desk-controller/; 2) https://hackaday.io/project/4173-uplift-desk-wifi-link/log/13628-remote-connector; 3) 
+ There are only a few websites that detail some work done, but the code in them simply does not work for my setup.
+ Refs:
+ 1) <a href="https://embedded-elixir.com/post/2019-01-18-nerves-at-home-desk-controller/" target="_blank">https://embedded-elixir.com/post/2019-01-18-nerves-at-home-desk-controller/</a>; and
+ 2)  2) <a href="https://hackaday.io/project/4173-uplift-desk-wifi-link/log/13628-remote-connector" target="_blank">https://hackaday.io/project/4173-uplift-desk-wifi-link/log/13628-remote-connector</a>; 
  Found out that I have power to it, but that's it... no LEDs on in the RT-11 and the up and down switches don't work....
