@@ -53,8 +53,12 @@ So I came up with the Ultrasonic sensor module... I'm sure you guessed it; more 
 Now, I think I have all the parts necessary for this workstation to work independently.<br>
 
 ## Personal/Coding Notes<br>
-As a very new/junior programmer, this project has gotten way out of hand real quick/over my head. But stubborn as I am, I trudged on.<br>
+As a very new/junior programmer, this project has gotten way out of hand real quick/over my head. But stubborn as I am, I trudged on...<br>
 I am using PlatformIO in VSCode for various reasons (library download/upgrades, series output, uploading to ESP32), although I have not used PlatformIO to its full potential.<br>
+Note:<br>
+  The files within the ```src``` and ```data``` folders are the ones that are mainly used.<br>
+  The ones within the ```lib``` folder are old files or files that are saved on the SD Card.<br>
+  The graphic files and this readme file within this main folder have not been .gitignored . They were not part of the PlatformIO's files.<br>
 
 ## Diagram:<br>
 Below is the wiring diagram currently used to attach all to my workstation:<br>
